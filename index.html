@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Audit Firm</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #004080;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      color: #003366;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.5rem;
+      width: 80%;
+      margin: 0.5rem auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background-color: #004080;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ABC Audit Firm</h1>
+    <p>Your Trusted Financial Partner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We are a professional audit firm dedicated to providing top-notch financial, tax, and consultancy services. Our mission is to help clients navigate financial challenges with accuracy and integrity.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Audit & Assurance</li>
+      <li>Tax Planning & Compliance</li>
+      <li>Business Consultancy</li>
+      <li>Bookkeeping & Accounting</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ABC Audit Firm. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you for contacting us. We will get back to you shortly!');
+    });
+  </script>
+</body>
+</html>
